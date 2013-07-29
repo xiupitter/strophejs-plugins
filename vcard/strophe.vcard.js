@@ -61,6 +61,6 @@ Strophe.addConnectionPlugin('vcard', {
   set: function(handler_cb, vCardEl, jid, error_cb) {
     var iq;
     iq = buildIq("set", jid, vCardEl);
-    return this._connection.sendIQ(iq, handler_cb, error_rb);
+    return this._connection.sendIQ(iq, handler_cb, error_cb);
   }
 });
